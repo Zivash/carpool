@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name" translatable="false">SZCarpool</string>
+    <string name="empty" translatable="false" />
+    <string name="continue_as">"Continue as "</string>
+    <string name="log_out_title">Log Out</string>
+    <string name="sure_log_out">Are you sure you want to log out?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ride_created">The ride was created successfully</string>
+    <string name="invalid_input">Your input is invalid</string>
+    <string name="clear_title">Cancel</string>
+    <string name="sure_clear">Do you want to clear all?</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="email_password_incorrect">Your email/password incorrect</string>
+    <string name="joined_ride">You have successfully joined the ride!</string>
+    <string name="no_rides_search">There are no rides matching your search!</string>
+    <string name="no_rides_driver">You have no rides as driver yet</string>
+    <string name="no_rides_passenger">You have no rides as passenger yet</string>
+    <string name="registration_successful">The registration was successful</string>
+    <string name="registration_failed">The registration failed</string>
+    <string name="show_route">Show Route</string>
+    <string name="select_date">Select date</string>
+    <string name="select_time">Select time</string>
+    <string name="available_seats">Available Seats</string>
+    <string name="enter_price">Enter price</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_ride">Create Ride</string>
+    <string name="join_ride">Join Ride</string>
+    <string name="seats_needed">Seats Needed</string>
+    <string name="search">Search</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="or">or</string>
+    <string name="not_yet_registered">Not yet registered?\nSign Up!</string>
+    <string name="my_rides">My Rides</string>
+    <string name="as_driver">As Driver</string>
+    <string name="as_passenger">As Passenger</string>
+    <string name="big_to">TO</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="take_picture">Take picture</string>
+    <string name="pick_picture">Pick picture</string>
+    <string name="find">Find</string>
+    <string name="add">Add</string>
+    <string name="logout">Logout</string>
+    <string name="you_must_approve_permissions">You must approve permissions</string>
+    <string name="turn_location">You must turn on location services</string>
+</resources>

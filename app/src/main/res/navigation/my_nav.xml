@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.carpoolapp.ui.log_in.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_findFragment"
+            app:destination="@id/findFragment"
+            app:popUpTo="@id/my_nav" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.carpoolapp.ui.sign_up.SignUpFragment"
+        android:label="SignUpFragment">
+        <action
+            android:id="@+id/action_signUpFragment_to_findFragment"
+            app:destination="@id/findFragment"
+            app:popUpTo="@id/my_nav" />
+    </fragment>
+    <fragment
+        android:id="@+id/findFragment"
+        android:name="com.example.carpoolapp.ui.find_fragment.FindRideFragment"
+        android:label="FindFragment">
+        <action
+            android:id="@+id/action_findFragment_to_rideDetailsFragment"
+            app:destination="@id/rideDetailsFragment" />
+        <action
+            android:id="@+id/action_findFragment_to_addRideFragment"
+            app:destination="@id/addRideFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/my_nav"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_findFragment_to_myRidesModeFragment"
+            app:destination="@id/myRidesModeFragment"
+            app:popUpTo="@id/my_nav" />
+        <action
+            android:id="@+id/action_findFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/my_nav" />
+    </fragment>
+    <fragment
+        android:id="@+id/rideDetailsFragment"
+        android:name="com.example.carpoolapp.ui.rides_info.RideDetailsFragment"
+        android:label="RideDetailsFragment">
+        <action
+            android:id="@+id/action_rideDetailsFragment_to_driverInfo"
+            app:destination="@id/driverInfo" />
+        <action
+            android:id="@+id/action_rideDetailsFragment_to_myRidesModeFragment"
+            app:destination="@id/myRidesModeFragment"
+            app:popUpTo="@id/my_nav" />
+        <action
+            android:id="@+id/action_rideDetailsFragment_to_addRideFragment"
+            app:destination="@id/addRideFragment" />
+        <action
+            android:id="@+id/action_rideDetailsFragment_to_findFragment"
+            app:destination="@id/findFragment"
+            app:popUpTo="@id/my_nav" />
+        <action
+            android:id="@+id/action_rideDetailsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_rideDetailsFragment_to_emptyRidesFragment"
+            app:destination="@id/emptyRidesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRideFragment"
+        android:name="com.example.carpoolapp.ui.add_ride.AddRideFragment"
+        android:label="AddRideFragment">
+        <action
+            android:id="@+id/action_addRideFragment_to_findFragment"
+            app:destination="@id/findFragment"
+            app:popUpTo="@id/my_nav" />
+        <action
+            android:id="@+id/action_addRideFragment_to_myRidesModeFragment"
+            app:destination="@id/myRidesModeFragment"
+            app:popUpTo="@id/my_nav" />
+        <action
+            android:id="@+id/action_addRideFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/my_nav" />
+    </fragment>
+    <fragment
+        android:id="@+id/driverInfo"
+        android:name="com.example.carpoolapp.ui.rides_info.DriverInfo"
+        android:label="DriverInfo">
+        <action
+            android:id="@+id/action_driverInfo_to_findFragment"
+            app:destination="@id/findFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myRidesModeFragment"
+        android:name="com.example.carpoolapp.ui.my_rides.MyRidesModeFragment"
+        android:label="MyRidesModeFragment">
+        <action
+            android:id="@+id/action_myRidesModeFragment_to_rideDetailsFragment"
+            app:destination="@id/rideDetailsFragment" />
+        <action
+            android:id="@+id/action_myRidesModeFragment_to_addRideFragment"
+            app:destination="@id/addRideFragment"
+            app:popUpTo="@id/my_nav" />
+        <action
+            android:id="@+id/action_myRidesModeFragment_to_findFragment"
+            app:destination="@id/findFragment"
+            app:popUpTo="@id/my_nav" />
+        <action
+            android:id="@+id/action_myRidesModeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/my_nav" />
+    </fragment>
+    <fragment
+        android:id="@+id/emptyRidesFragment"
+        android:name="com.example.carpoolapp.ui.rides_info.EmptyRidesFragment"
+        android:label="EmptyRidesFragment">
+        <action
+            android:id="@+id/action_emptyRidesFragment_to_findFragment"
+            app:destination="@id/findFragment"
+            app:popUpTo="@id/my_nav" />
+        <action
+            android:id="@+id/action_emptyRidesFragment_to_myRidesModeFragment"
+            app:destination="@id/myRidesModeFragment"
+            app:popUpTo="@id/my_nav" />
+    </fragment>
+
+</navigation>

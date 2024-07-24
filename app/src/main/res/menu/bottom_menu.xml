@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/find"
+        android:icon="@drawable/search_icon"
+        android:title="@string/find" />
+    <item
+        android:id="@+id/rides"
+        android:icon="@drawable/rides_icon"
+        android:title="@string/my_rides" />
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/add_icon"
+        android:title="@string/add" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout_icon"
+        android:title="@string/logout" />
+</menu>

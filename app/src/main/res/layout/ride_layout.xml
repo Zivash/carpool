@@ -1,0 +1,114 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="5dp"
+    app:cardBackgroundColor="#1AFFFFFF"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:attr/dividerHorizontal"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_origin_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/origin_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/big_to"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/car_icon" />
+
+        <TextView
+            android:id="@+id/tv_destination_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/destination_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/date_icon_black" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/clock_icon_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_seats"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/seat_icon_black" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/payment_icon_black" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
