@@ -1,5 +1,14 @@
 # Carpool App 
 
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Permissions](#permissions)
+4. [Dependencies](#dependencies)
+
+---
+
 ## Overview
 
 The Carpool App is designed to revolutionize the way people commute by
@@ -7,55 +16,55 @@ offering a smart, efficient, and eco-friendly solution for shared rides. Whether
 you're commuting to work, running errands, or heading out for a night on
 the town, our app makes it easy to connect with others going your way.
 
-## Table of Contents
-
-1. [Features](#features)
-   - [User Registration & Authentication](#user-registration--authentication)
-   - [Profile Picture](#profile-picture)
-   - [Database Integration](#database-integration)
-   - [Image Storage](#image-storage)
-   - [Room Database Integration](#room-database-integration)
-   - [Ride Details](#ride-details)
-   - 
-3. [Permissions](#permissions)
-4. [Features Breakdown](#features-breakdown)
-   - [SignUpFragment](#signupfragment)
-   - [SignUpViewModel](#signupviewmodel)
-   - [FindRideFragment](#findridefragment)
-   - [LoginFragment](#loginfragment)
-   - [MyRidesModeFragment](#myridesmodefragment)
-   - [DriverInfo Fragment](#driverinfo-fragment)
-   - [EmptyRidesFragment](#emptyridesfragment)
-5. [Carpool App - Local Database Setup](#carpool-app---local-database-setup)
-6. [License](#license)
-7. [Acknowledgments](#acknowledgments)
-
 ---
 
 ## Features
 
 ### User Registration & Authentication
-- Users can sign up and log in using email and password with Firebase Authentication.
+- **Sign-up and Login**: Users can sign up and log in using email and password with Firebase Authentication.
+- **User Session Management**: Upon successful login, users are navigated to the main app screen, `FindFragment`, and their email is displayed as the username.
 
 ### Profile Picture
-- Users can upload or take a new picture for their profile.
+- **Profile Image Upload**: Users can upload or take a new picture for their profile, which is stored in Firebase Storage.
 
 ### Database Integration
-- User data (name, email, phone number, profile picture) is stored in Firebase Realtime Database.
-
-### Image Storage
-- User profile pictures are stored in Firebase Storage.
-
-### Room Database Integration
-- Uses Room for local storage of user details (ID, email, password) and allows offline data persistence.
+- **Firebase Realtime Database**: User data (name, email, phone number, profile picture) is stored in Firebase Realtime Database.
+- **Offline Storage**: Utilizes **Room Database** to locally store user details like ID, email, and password, allowing offline access.
 
 ### Ride Details
-- Displays information about carpool rides, including the origin, destination, available seats, price, and driver details.
+- **Ride Model**: The app displays ride details, including origin, destination, available seats, price, and driver information.
+- **Seats Management**: Users can join or create rides, and available seats are updated in real-time.
 
-- **Room Database**: Stores user details like ID, email, and password.
-- **User Repository**: Manages operations like adding a user and retrieving user details.
-- **Ride Model**: Contains information about a ride, including origin, destination, available seats, price, and driver details.
-- **Location Autocomplete**: Users can select the origin and destination locations using Google Places Autocomplete.
-- **Current Location**: Users can use their current GPS location for either the origin or destination.
-- **Date Picker**: A date picker is used to select the ride date.
-- **User Authentication**: 
+### Location-based Ride Searching
+- **FindRideFragment**: Users can search for carpool rides based on origin, destination, available seats, and ride date.
+- **Location Autocomplete**: Users can select origin and destination locations via Google Places Autocomplete.
+- **Current Location**: Users can use their GPS location for either origin or destination.
+
+### Driver Interaction
+- **DriverInfo Fragment**: Displays driver details (name, phone number, and picture) and allows users to contact the driver or join a ride.
+- **Join Ride**: Users in "Find" mode can join a ride, which updates ride data in Firebase by reducing available seats and adding the user as a passenger.
+
+### Ride Management
+- **MyRidesModeFragment**: Allows users to switch between modes (Driver/Passenger), view, or add their rides.
+- **EmptyRidesFragment**: Displays a message when no rides are available in the selected mode.
+
+### Data Persistence
+- **Room Database**: Stores user details for persistent storage of their login data.
+
+---
+
+## Permissions
+
+The app requires the following permissions:
+
+- **Camera**: To take profile pictures.
+- **Storage**: To save images to the gallery.
+- **ACCESS_FINE_LOCATION**: To access the user’s location for determining their current position.
+
+---
+
+## Dependencies
+
+- **Google Places API**
+- **Google Maps API** (for LatLng functionality)
+- **ViewModel** and **LiveData** for managing the state of UI components
