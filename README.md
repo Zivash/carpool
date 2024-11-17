@@ -16,9 +16,7 @@ the town, our app makes it easy to connect with others going your way.
    - [Image Storage](#image-storage)
    - [Room Database Integration](#room-database-integration)
    - [Ride Details](#ride-details)
-2. [Getting Started](#getting-started)
-   - [Prerequisites](#prerequisites)
-   - [Setup](#setup)
+   - 
 3. [Permissions](#permissions)
 4. [Features Breakdown](#features-breakdown)
    - [SignUpFragment](#signupfragment)
@@ -54,25 +52,6 @@ the town, our app makes it easy to connect with others going your way.
 ### Ride Details
 - Displays information about carpool rides, including the origin, destination, available seats, price, and driver details.
 
----
-
-## Getting Started
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- **Android Studio**: The official IDE for Android development.
-- **Firebase Project**: Set up a Firebase project and integrate Firebase Authentication, Firebase Realtime Database, and Firebase Storage with your Android project.
-
-### Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/carpool-app.git
-
-
-## Features
 - **Room Database**: Stores user details like ID, email, and password.
 - **User Repository**: Manages operations like adding a user and retrieving user details.
 - **Ride Model**: Contains information about a ride, including origin, destination, available seats, price, and driver details.
