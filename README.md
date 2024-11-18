@@ -13,7 +13,7 @@
 
 The Carpool App is designed to revolutionize the way people commute by
 offering a smart, efficient, and eco-friendly solution for shared rides. Whether
-you're commuting to work, running errands, or heading out for a night on
+you're commuting to work or heading out for a night on
 the town, our app makes it easy to connect with others going your way.
 
 ---
