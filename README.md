@@ -51,13 +51,13 @@ This project is an Android application designed to connect drivers and passenger
 <div align="center">
    <img src="https://github.com/user-attachments/assets/86a1f26e-0de1-4519-b49f-d52bd7d04720" width="200" />
   &nbsp;&nbsp;&nbsp;
-   <img src="https://github.com/user-attachments/assets/4737355a-574b-41b1-a1f5-8ec605a955a9" width="300" />
+   <img src="https://github.com/user-attachments/assets/4737355a-574b-41b1-a1f5-8ec605a955a9" width="200" />
   &nbsp;&nbsp;&nbsp;
-   <img src="https://github.com/user-attachments/assets/8eb3314a-7aeb-4f7e-8589-5b410947efea"width="300" />
+   <img src="https://github.com/user-attachments/assets/8eb3314a-7aeb-4f7e-8589-5b410947efea"width="200" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/fff799ae-bbf4-4aee-b363-545befa9cb11" width="300" />
+  <img src="https://github.com/user-attachments/assets/fff799ae-bbf4-4aee-b363-545befa9cb11" width="200" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/9190e4d3-3775-4ba0-9e4d-9667c336328e" width="300" />
+  <img src="https://github.com/user-attachments/assets/9190e4d3-3775-4ba0-9e4d-9667c336328e" width="200" />
   &nbsp;&nbsp;&nbsp;
 
 
