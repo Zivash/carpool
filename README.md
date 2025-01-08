@@ -1,70 +1,50 @@
-# Carpool App 
+# Android Application - Carpool Ride-Sharing
 
-## Table of Contents
+## **Overview**
+This project is an Android application designed to connect drivers and passengers for shared rides, leveraging **real-time Firebase integration** and a dynamic, user-friendly interface. The application enables users to create, find, and manage rides, focusing on efficiency, security, and scalability.  
 
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Permissions](#permissions)
-4. [Dependencies](#dependencies)
+## Key Features  
 
----
+### 1. **Intuitive User Experience**  
+- Clear and interactive UI simplifies navigation across features.  
+- Role-specific functionality tailored to the needs of both drivers and passengers.  
 
-## Overview
+### 2. **Ride Creation and Management**  
+- **Drivers** can define ride details, including:  
+  - Origin and destination (Google Maps and Places API integration).  
+  - Date, time, price, and available seats.  
+- Ride management features allow updates or deletions with ease.  
 
-The Carpool App is designed to revolutionize the way people commute by
-offering a smart, efficient, and eco-friendly solution for shared rides. Whether
-you're commuting to work or heading out for a night on
-the town, our app makes it easy to connect with others going your way.
+### 3. **Advanced Ride Search**  
+- **Passengers** can search for rides using multiple criteria.  
+- Results include detailed ride and driver information.  
+- Option to contact drivers directly via phone call for ride coordination.  
 
----
+### 4. **Real-Time Updates**  
+- Firebase-based backend ensures real-time synchronization of user and ride data.  
+- Local Room Database stores user information for:  
+  - Quick sign-in without re-entering credentials.  
+  - Seamless access across sessions.  
 
-## Features
+### 5. **Driver and Passenger Features**  
+- **Drivers**:  
+  - Manage created rides.  
+  - Update or delete ride details.  
+  - Track bookings in real time.  
+- **Passengers**:  
+  - Book rides with real-time seat allocation.  
+  - View driver contact information.  
+  - Join rides with ease.  
+- **Empty Ride Scenarios**: Displays user-friendly messages when no rides match search or creation criteria.  
 
-### User Registration & Authentication
-- **Sign-up and Login**: Users can sign up and log in using email and password with Firebase Authentication.
-- **User Session Management**: Upon successful login, users are navigated to the main app screen, `FindFragment`, and their email is displayed as the username.
+### 6. **Secure and Personalized**  
+- Firebase Authentication ensures secure login and registration.  
+- Users can upload profile pictures and manage personalized accounts for a better experience.  
 
-### Profile Picture
-- **Profile Image Upload**: Users can upload or take a new picture for their profile, which is stored in Firebase Storage.
+### 7. **Scalable and Flexible**  
+- Modular design allows for:  
+  - Easy addition of features like in-app payments and reviews.  
+  - Clean architecture ensures maintainability and extensibility.
+  
+## **Screenshoots**
 
-### Database Integration
-- **Firebase Realtime Database**: User data (name, email, phone number, profile picture) is stored in Firebase Realtime Database.
-- **Offline Storage**: Utilizes **Room Database** to locally store user details like ID, email, and password, allowing offline access.
-
-### Ride Details
-- **Ride Model**: The app displays ride details, including origin, destination, available seats, price, and driver information.
-- **Seats Management**: Users can join or create rides, and available seats are updated in real-time.
-
-### Location-based Ride Searching
-- **FindRideFragment**: Users can search for carpool rides based on origin, destination, available seats, and ride date.
-- **Location Autocomplete**: Users can select origin and destination locations via Google Places Autocomplete.
-- **Current Location**: Users can use their GPS location for either origin or destination.
-
-### Driver Interaction
-- **DriverInfo Fragment**: Displays driver details (name, phone number, and picture) and allows users to contact the driver or join a ride.
-- **Join Ride**: Users in "Find" mode can join a ride, which updates ride data in Firebase by reducing available seats and adding the user as a passenger.
-
-### Ride Management
-- **MyRidesModeFragment**: Allows users to switch between modes (Driver/Passenger), view, or add their rides.
-- **EmptyRidesFragment**: Displays a message when no rides are available in the selected mode.
-
-### Data Persistence
-- **Room Database**: Stores user details for persistent storage of their login data.
-
----
-
-## Permissions
-
-The app requires the following permissions:
-
-- **Camera**: To take profile pictures.
-- **Storage**: To save images to the gallery.
-- **ACCESS_FINE_LOCATION**: To access the user’s location for determining their current position.
-
----
-
-## Dependencies
-
-- **Google Places API**
-- **Google Maps API** (for LatLng functionality)
-- **ViewModel** and **LiveData** for managing the state of UI components
