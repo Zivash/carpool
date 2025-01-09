@@ -48,36 +48,22 @@ This project is an Android application designed to connect drivers and passenger
   
 ## **Screenshoots**
 
-<div align="center">
-   <img src="https://github.com/user-attachments/assets/86a1f26e-0de1-4519-b49f-d52bd7d04720" width="200" height="500" />
-  &nbsp;&nbsp;&nbsp;
-   <img src="https://github.com/user-attachments/assets/4737355a-574b-41b1-a1f5-8ec605a955a9" width="200" />
-  &nbsp;&nbsp;&nbsp;
-   <img src="https://github.com/user-attachments/assets/8eb3314a-7aeb-4f7e-8589-5b410947efea"width="200" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/fff799ae-bbf4-4aee-b363-545befa9cb11" width="200" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/9190e4d3-3775-4ba0-9e4d-9667c336328e" width="200" />
-  &nbsp;&nbsp;&nbsp;
-
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/86a1f26e-0de1-4519-b49f-d52bd7d04720" width="200" style="border-radius: 8px; margin: 10px;" />
+      <img src="https://github.com/user-attachments/assets/21316337-ebfe-463a-8eae-31e0be4a06bf" width="200" style="border-radius: 8px; margin: 10px;" />
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/4737355a-574b-41b1-a1f5-8ec605a955a9" width="200" style="border-radius: 8px; margin: 10px;" />
+      <img src="https://github.com/user-attachments/assets/492682ab-ee79-4e85-bc34-3324a564596d" width="200" style="border-radius: 8px; margin: 10px;" />
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/8eb3314a-7aeb-4f7e-8589-5b410947efea" width="200" style="border-radius: 8px; margin: 10px;" />
+      <img src="https://github.com/user-attachments/assets/1ce27eaa-7dc1-456c-95b4-568afe8a1166" width="200" style="border-radius: 8px; margin: 10px;" />
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/fff799ae-bbf4-4aee-b363-545befa9cb11" width="200" style="border-radius: 8px; margin: 10px;" />
+      <img src="https://github.com/user-attachments/assets/e5f2d036-0ecd-4658-be82-8e299d4b4225" width="200" style="border-radius: 8px; margin: 10px;" />
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/9190e4d3-3775-4ba0-9e4d-9667c336328e" width="200" style="border-radius: 8px; margin: 10px;" />
+      <img src="https://github.com/user-attachments/assets/d6d5fee1-7708-490f-a92f-8293146828ad" width="200" style="border-radius: 8px; margin: 10px;" />
     </td>
   </tr>
 </table>
-
-
